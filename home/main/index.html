@@ -18,6 +18,7 @@
 
 	<script src="../resource/js/lib/jquery-1.12.4.min.js"></script>
 	<script src="../resource/js/lib/bluebird.min.js"></script>
+	<script src="../resource/js/lib/video.min.js"></script>
 	<script src="../resource/js/lib/slick.min.js"></script>
 	<script src="../resource/js/common.js"></script>
 </head>
@@ -32,15 +33,10 @@
 					<!-- [Start] slider -->
 					<div class="slider-area slider-visual">
 						<div class="slider-inner">
-							<div class="slide" style="background-image:url('../resource/img/visual_main1.jpg');">
-								<div class="tit-area">
-									<strong class="tit-sub">Culture & Arts</strong>
-									<h2 class="tit-d1">날마다 문화<span class="txt-dot">&dot;</span>예술</h2>
-									<p class="desc-d1">과천시민의 일상을 문화예술로 채워드립니다.</p>
-								</div>
-							</div>
-							<div class="slide" style="background-image:url('../resource/img/visual_main2.jpg');">
-							</div>
+							<div class="slide" style="background-image:url('../resource/img/visual_main1.jpg');"></div>
+							<div class="slide" style="background-image:url('../resource/img/visual_main1.jpg');"></div>
+							<div class="slide" style="background-image:url('../resource/img/visual_main1.jpg');"></div>
+							<div class="slide" style="background-image:url('../resource/img/visual_main1.jpg');"></div>
 						</div>
 					</div>
 					<div class="slider-pagination type-num"></div>
@@ -49,130 +45,112 @@
 				</div>
 			</div>
 
-			<div class="cont-area">
+			<div class="cont-area intro">
 				<div class="cont-grid">
-					<div class="tit-area">
-						<h3 class="tit-d2">공지사항</h3>
+					<strong class="intro-tit">
+						<img src="../resource/img/intro_text1.png" alt="가장 쉽고, 재미있어서 행복한 Special 말하자!">
+					</strong>
+					<span class="intro-desc"><span>FUN,<br>EASY,<br>HAPPY!</span></span>
+
+					<div class="intro-vod">
+						<video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" poster="https://vod.zroad.tv/mp4/116/2019-11-12/1573531805009813/Thumbnails/1573531805009813.0000000.jpg" data-setup="{}">
+						<source type="application/x-mpegURL" src="https://vod.zroad.tv/mp4/116/2019-11-12/1573531805009813/HLS/1573531805009813.m3u8">
+							<p class="vjs-no-js">
+								To view this video please enable JavaScript, and consider upgrading to a
+								web browser that
+								<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+							</p>
+						</video>
+						<p class="intro-vod-txt">#쉬운영어 #재미있는중국어<br>#english # chinese</p>
 					</div>
-					<div class="cont-inner">
-						<ul class="bbs-list">
-							<li>
-								<strong class="td category">안내</strong>
-								<span class="td subject">
-									<a href="#">&lt;셀프 마사지사&gt; 공연 온라인 참여 안내</a>
-									<i class="tag-new">NEW</i> <!-- [D] : 새 글에는 .tag-new 태그 추가 -->
-								</span>
-								<span class="td date">2020.11.18</span>
-							</li>
-							<li>
-								<strong class="td category">모집</strong>
-								<span class="td subject">
-									<a href="#">2020 과천축제 [당신의 이야기를 그려드려요] 시민 이야기 모집</a>
-								</span>
-								<span class="td date">2020.10.27</span>
-							</li>
-							<li>
-								<strong class="td category">입찰공고</strong>
-								<span class="td subject">
-									<a href="#">제24회 과천축제 시설운영 용역업체 선정 입찰공고</a>
-								</span>
-								<span class="td date">2020.10.10</span>
-							</li>
-							<li>
-								<strong class="td category">안내</strong>
-								<span class="td subject">
-									<a href="#">&lt;제24회 과천축제 시설운영 용역업체 선정 입찰&gt; 제안서 평가위원(후보자) 모집공고</a>
-									<i class="tag-new">NEW</i>
-								</span>
-								<span class="td date">2020.09.01</span>
-							</li>
-							<li>
-								<strong class="td category">결과발표</strong>
-								<span class="td subject">
-									<a href="#">&lt;2020년 과천축제 1차 단기계약직 채용 최종합격자 발표&gt;</a>
-								</span>
-								<span class="td date">2020.08.18</span>
-							</li>
-						</ul>
-						<div class="btn-area tac">
-							<a href="../notice/notice.html" class="btn-base"><span>MORE VIEW<i class="ico-arr"></i></span></a>
-						</div>
+
+					<div class="intro-box box1">
+						<strong class="subject"><img src="../resource/img/intro_text2.png" alt="영어, 중국어도 이제는 구독하자!"></strong>
+						<img src="../resource/img/intro_box1.png" alt="" class="img-bg">
+					</div>
+
+					<div class="intro-box box2">
+						<strong class="subject"><img src="../resource/img/intro_text3.png" alt="매일 15분! SPECIAL 말하자를 만나는 시간!"></strong>
 					</div>
 				</div>
 			</div>
 
-			<div class="cont-area business">
+			<div class="cont-area event">
 				<div class="cont-grid">
-					<div class="tit-area">
-						<h3 class="tit-d2">주요사업</h3>
-					</div>
-					<div class="cont-inner">
-						<div class="link-list">
-							<a href="../business/concert.html" class="link-visual">
-								<span class="link-img" style="background-image:url('../resource/img/link_concert.jpg');"></span>
-								<div>
-									<strong class="col2"><i>공</i><i>연</i><i>전</i><i>시</i></strong>
-									<span class="txt">MORE +</span>
+					<div class="event-tit">수강후기 또는 인증샷 찍고 <strong>스타벅스 기프티콘</strong> 받아가세요! </div>
+					<ol class="rule-list">
+						<li>
+							<i class="num">1</i>
+							응모방법 하나!
+							<a href="#"><span>수강후기 작성</span></a>
+						</li>
+						<li>
+							<i class="num">2</i>
+							응모방법 둘!
+							<a href="#"><span>공부 인증샷 찍어서 올리기</span></a>
+						</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="cont-area detailinfo">
+				<div class="cont-grid">
+					<dl class="info-list">
+						<div class="item1">
+							<dt><strong>자신있는</strong> 강의콘텐츠</dt>
+							<dd>
+								<ul class="bul-base">
+									<li>영어, 중국어 70강좌, 4,300 여 강의</li>
+									<li>대한민국 최다!최고! 콘텐츠</li>
+									<li>매달 200여 신규 강좌 업뎃</li>
+									<li>유명 어학원의 50 여명의 선생님들과 우수한 연구진<br>최고의 제작진의 콜라보</li>
+								</ul>
+							</dd>
+							<dd>
+								<div class="desc-img n1">
+									<img src="../resource/img/desc_visual1.png" class="bg" alt="">
+									<img src="../resource/img/desc_visual1_sub.png" class="sub" alt="">
 								</div>
-							</a>
-							<a href="../business/theater.html" class="link-visual">
-								<span class="link-img" style="background-image:url('../resource/img/link_theater.jpg');"></span>
-								<div>
-									<strong class="col4"><i>극</i><i>장</i><i>안</i><i>내</i><i>대</i><i>관</i></strong>
-									<span class="txt">MORE +</span>
-								</div>
-							</a>
-							<a href="../business/education.html" class="link-visual">
-								<span class="link-img" style="background-image:url('../resource/img/link_edu.jpg');"></span>
-								<div>
-									<strong class="col2"><i>예</i><i>술</i><i>교</i><i>육</i></strong>
-									<span class="txt">MORE +</span>
-								</div>
-							</a>
-							<a href="../business/culture.html" class="link-visual">
-								<span class="link-img" style="background-image:url('../resource/img/link_local.jpg');"></span>
-								<div>
-									<strong class="col2"><i>지</i><i>역</i><i>문</i><i>화</i></strong>
-									<span class="txt">MORE +</span>
-								</div>
-							</a>
+							</dd>
 						</div>
-					</div>
+						<div class="item2">
+							<dt>IPTV 시청률1위!<strong>교육부 스마트재단 eduTV!</strong></dt>
+							<dd>
+								<ul class="bul-base">
+									<li>최고, 최다, 다양한 레벨의 eduTV 학습 콘텐츠를 그대로<br>말하자에서 공부할 수 있습니다.</li>
+									<li>비싸기만 하고 부실한 어학 강의들은 가라!</li>
+									<li>왕초보 탈출을 위한 그날까지 말하자가 함께합니다. </li>
+								</ul>
+							</dd>
+							<dd>
+								<div class="desc-img n2">
+									<img src="../resource/img/desc_visual2.png" class="bg" alt="">
+									<img src="../resource/img/desc_visual2_sub.png" class="sub" alt="">
+								</div>
+							</dd>
+						</div>
+						<div class="item3">
+							<dt><strong>매직 15분!</strong> 운동처럼 꾸준히!</dt>
+							<dd>
+								<ul class="bul-base">
+									<li>꾸준히 공부하도록 개발된재미있고 쉬운 말하자의 매직15분</li>
+									<li>인터넷 강의의 최고 집중력 높은 시간 매직 15분</li>
+									<li>길고 지루한 강의가 아닌, 재미있게 15분 강의를 공부하다 보면<br>어느새 입에서 영어,중국어가 술술 나오게 됩니다.</li>
+									<li>언제 어디서나 매일 15분, 즐겁게 듣고 따라 말하기 하세요.</li>
+									<li>말하자는 회원님들의 즐거움도 챙겨드립니다. </li>
+								</ul>
+							</dd>
+							<dd>
+								<div class="desc-img n3">
+									<img src="../resource/img/desc_visual3.png" class="bg" alt="">
+									<img src="../resource/img/desc_visual3_sub.png" class="sub" alt="">
+								</div>
+							</dd>
+						</div>
+					</dl>
 				</div>
 			</div>
-				
-			<div class="cont-area">
-				<div class="cont-grid">
-					<div class="tit-area">
-						<h3 class="tit-d2">재단소개</h3>
-					</div>
-					<div class="cont-inner">
-						<ul class="intro-list">
-							<li class="foundation">
-								<strong class="tit">과천문화재단 소개</strong>
-								<span class="desc">과천문화재단은?</span>
-								<div class="btn-area">
-									<a href="../intro/purpose.html" class="btn-base">MORE VIEW<i class="ico-arr"></i></a>
-								</div>
-							</li>
-							<li class="organization">
-								<strong class="tit">조직도</strong>
-								<span class="desc">과천문화재단 구성원</span>
-								<div class="btn-area">
-									<a href="../intro/organization.html" class="btn-base">MORE VIEW<i class="ico-arr"></i></a>
-								</div>
-							</li>
-							<li class="map">
-								<strong class="tit">오시는 길</strong>
-								<span class="desc">과천문화재단 위치 안내</span>
-								<div class="btn-area">
-									<a href="../intro/map.html" class="btn-base">MORE VIEW<i class="ico-arr"></i></a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			
 
 			<script type="text/javascript">
 				;(function ($, win, doc, undefined) {
