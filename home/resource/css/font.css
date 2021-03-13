@@ -78,3 +78,15 @@
 	src:url('../font/scdream5-webfont.woff2') format('woff2'), 
 			url('../font/scdream5-webfont.woff') format('woff');
 }
+@font-face{ 
+	font-family:'scdream';
+	font-weight:700;
+	src:url('../font/scdream7-webfont.woff2') format('woff2'), 
+			url('../font/scdream7-webfont.woff') format('woff');
+}
+@font-face{ 
+	font-family:'scdream';
+	font-weight:800;
+	src:url('../font/scdream9-webfont.woff2') format('woff2'), 
+			url('../font/scdream9-webfont.woff') format('woff');
+}

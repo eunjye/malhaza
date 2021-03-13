@@ -340,7 +340,7 @@
   vertical-align: top;
   box-sizing: border-box;
   color: #fff;
-  background-color: #000;
+  background-color: transparent;
   position: relative;
   padding: 0;
   font-size: 10px;
@@ -774,6 +774,10 @@ body.vjs-full-window {
   font-size: 1.8em;
   line-height: 1.67;
 }
+.Mozilla .vjs-button > .vjs-icon-placeholder:before,
+[class*=IE] .vjs-button > .vjs-icon-placeholder:before { 
+  font-size:0.35em;
+}
 
 .video-js .vjs-control:focus:before,
 .video-js .vjs-control:hover:before,
@@ -862,7 +866,7 @@ body.vjs-full-window {
   font-size: 0.9em;
   position: absolute;
   right: -0.5em;
-  top: -0.3333333333em;
+  top: -0.666em;
   z-index: 1;
 }
 
@@ -1084,7 +1088,7 @@ body.vjs-full-window {
   height: 0.3em;
 }
 .vjs-slider-horizontal .vjs-volume-level:before {
-  top: -0.3em;
+  top: -0.6em;
   right: -0.5em;
 }
 
@@ -1118,7 +1122,7 @@ body.vjs-full-window {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
-  background-color: #000000;
+  background-color: transparent;
   cursor: pointer;
   margin: 0;
   padding: 0;
