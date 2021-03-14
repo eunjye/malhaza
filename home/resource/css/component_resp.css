@@ -138,7 +138,7 @@
 	.register-area .arrow.n3 { left:550px; top:135px; }
 	.register-area .arrow.n4 { left:728px; top:140px; }
 	
-	.guide-list.slick-slider .guide-list .desc { font-size:16px !important; padding:20px 15px 25px; color:red !important}
+	.guide-list.slick-slider .guide-list .desc { font-size:16px !important; padding:20px 15px 25px; }
 }
 
 @media (max-width:765px) {
