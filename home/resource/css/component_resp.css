@@ -274,7 +274,7 @@
 
 /* mobile */
 @media (max-width:500px) {
-
+	.video-js .vjs-big-play-button .vjs-icon-placeholder:before { font-size:1.5em; }
 
 	.paging-link,
 	.btn-jump { display:none; }
