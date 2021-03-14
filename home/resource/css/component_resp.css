@@ -58,6 +58,7 @@
 	.header-area.open .gnb-area
 	.header-area.open:after { opacity:0; }
 	.header-area .logo { z-index:2; position:absolute; left:15px; top:45%; transform:translateY(-50%); margin:0; }
+	.header-area .logo span { left:70px; top:12px; font-size:20px;}
 	.header-area .btn-menu { z-index:2; display:block; position:absolute; top:19px; right:15px; }
 	.header-area.open .btn-menu:after,
 	.header-area.open .btn-menu:before,
