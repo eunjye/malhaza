@@ -216,7 +216,7 @@
 	.guide-list .item .vod-area { height:46.5vw; pointer-events: initial !important; ; }
 	.guide-list .item .vod-area .video-js { width:110%; height:110%; left:50%; transform:translate(-50%)}
 	.guide-area .desc {padding:20px 15px 25px !important; }
-	.guide-area i { display:block;font-size:16px !important; line-height:1.4em; color:red !important }
+	.guide-area span { display:block;font-size:16px !important; line-height:1.4em; }
 
 	
 
