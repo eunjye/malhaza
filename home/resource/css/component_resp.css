@@ -141,7 +141,7 @@
 
 @media (max-width:765px) {
 	.slider-pagination.type-num { bottom:10px; transform:scale(0.7); }
-	.btn-rolling { margin:0; }
+	.btn-rolling { margin:2px 0 0; }
 
 	.btn-more { width:40px; height:40px; }
 	.slider-class { padding:0 25px; }
