@@ -173,11 +173,11 @@
 					if ($(this).hasClass('play')) {
 						$(this).removeClass('play');
 						$(this).addClass('pause');
-						$('.slider-visual .slider-inner').slick('slickPause');
+						$('.slider-visual .slider-inner').slick('slickPlay');
 					} else {
 						$(this).removeClass('pause');
 						$(this).addClass('play');
-						$('.slider-visual .slider-inner').slick('slickPlay');
+						$('.slider-visual .slider-inner').slick('slickPause');
 					}
 				})
 			}

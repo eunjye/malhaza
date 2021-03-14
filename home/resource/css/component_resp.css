@@ -65,8 +65,6 @@
 	.header-area.open .btn-menu:before { transform:rotate(45deg); top:14px; left:2px; }
 	.header-area.open .btn-menu:after { transform:rotate(-45deg); top:14px; left:2px; }
 	.header-area.open .btn-menu span { width:0; }
-	.header-area.open .img-logo { display:none; }
-	.header-area.open .img-logo.dark { display:block; }
 
 	.header-util { position:absolute; top:12px; right:50px; float:none; margin:0; }
 	.header-util > span { margin:0 8px; }
@@ -91,11 +89,18 @@
 	.nav-d2 > li { margin:0; }
 	.nav-d2 > li a { font-size:15px; font-weight:400; }
 
+	.footer-area .footer-grid { padding:30px 25px 50px; }
+	.footer-link { display:block; width:100%; margin:20px -10px 0; }
+	.footer-link li:before { display:none; }
+	.footer-link li a { padding:5px 10px; font-size:14px; }
+	.footer-area .address { padding-top:20px; }
+	.footer-area .address span { font-size:14px; }
 
 	/* main : event */
 	.cont-area.event .cont-grid { padding-right:25%; }
 
-	.class-point-box { padding-bottom:60px; }
+	/* datail */
+	.class-point-box { width:100%; padding-bottom:60px; }
 	.point-inner { float:none; width:100%; }
 	.vod-list { position:relative; top:auto; right:auto; width:100%; margin-top:140px; padding-top:70px; }
 	.vod-list li { width:100%; }
@@ -103,10 +108,24 @@
 	.vod-list .desc { width:71%; }
 	.class-point-list li .desc { top:100%; left:0; margin:30px 0 0 20px; text-align: left; font-size:20px; padding-right:80px; }
 
-	.paging-link a { margin:0 2px; }
+
+	.cont-area.class .btn-area { margin-top:40px; margin-bottom:0; }
+	.detail-area .cont-grid { padding:80px 25px; }
+	.detail-class:after { background-size:contain;}
+	.class-info-list { flex-wrap:wrap; }
+	.class-info-list li { flex:0 1 auto; width:calc(50% - 28px); margin:14px; }
+
+	.class-list { margin:0; }
+	.class-list .head { padding-top:16px; }
+	.class-list .head span { display:block; text-align:left; }
+	.class-list .head strong { display:block; height:auto; }
+	
+
+	.paging-link a { margin:0; }
 }
 
 @media (max-width:765px) {
+	.detail-area .cont-grid,
 	.cont-grid { padding:40px 25px; }
 	.cont-area.event .cont-grid { padding-left:25px; }
 
@@ -156,6 +175,43 @@
 
 	.register-tit { font-size:20px; }
 	.register-tit strong { font-size:25px; }
+
+
+	/* detail */
+	.teacher-name { font-size:50px; }
+	.class-vod { display:block; width:60%; margin:0; max-height:100%; height:30vw; max-height:350px; }
+	.teacher-img { width:45%; }
+	.teacher-info .desc { font-size:25px; }
+	.teacher-info .desc span { margin-top:8px; display:block; }
+	.detail-intro .teacher-info { display:block; width:100%; background-image:none; margin:30px 0 0; }
+	.class-tit:before { zoom:0.7; margin-top:-8px;}
+	.bul-check { margin-top:20px; margin-right:40%; }
+	.bul-check > li{ font-size:16px; background-position:0 2px; }
+	.class-tit { font-size:32px; }
+	.vod-list .title { font-size:25px; }
+
+	.class-info { padding:30px 25px 0; }
+	.class-info-list { margin-top:30px; }
+	.class-info-list li{ width:100%; margin:30px 0; min-height:0; padding-bottom:30px; }
+	.class-info-list li:before { transform:scale(.8); margin:-70px auto 0; }
+	.class-info-list strong { font-size:20px; margin:5px auto 10px; }
+	
+	.class-point-box { padding:30px 20px; }
+	.class-point-box .class-tit { margin-bottom:80px; }
+	.class-point-list li { width:100%; margin-left:0; font-size:18px; padding:15px 25px; min-height:0; }
+	.class-point-list li i { bottom:100%; margin-bottom:10px; left:0; margin-right:0; right:auto; height:45px; line-height:45px; font-size:16px; }
+	.class-point-list li .desc { font-size:16px; }
+	.paging-area { margin:40px 0 60px; }
+
+	.vod-list { text-align:center; }
+	.vod-list .title { left:50%; right:auto; text-align:center; transform:skew(-20deg) translateX(-50%)}
+	.vod-list .title::before { display:none; }
+	.vod-list { padding:50px 20px 30px; }
+	.vod-list .video-js { float:none; width:100%; height:30vw; }
+	.vod-list .desc{  text-align:center; float:none; padding:20px 10px 0; width:100%; font-size:16px; }
+	.vod-list .desc strong { font-size:18px; }
+	.vod-list .video-js .vjs-control { width:2.4em; }
+	.vod-list .video-js .vjs-progress-control { flex:1 1 45%; 1}
 }
 /* only mo */
 @media (min-width:501px) {
@@ -169,7 +225,7 @@
 	.paging-link,
 	.btn-jump { display:none; }
 
-	.btn-base.type2 {width:100%; padding:0 20px; font-size:20px;}
+	.btn-base.type2 {width:100%; padding:0 20px; height:60px; line-height:60px; font-size:18px;}
 
 	.btn-more-view2 { display:block; width:100%; font-size:16px; text-align:center; display:block; border-radius:15px; padding:15px 0; border:1px solid #d9d9d9}
 	.btn-more-view2:after { display:inline-block; vertical-align:middle; width:10px; height:10px; border-bottom:1px solid #252525; border-right:1px solid #252525; transform:rotate(45deg); margin:-9px 0 0 20px; content:""; }
@@ -180,4 +236,12 @@
 	.class-list li { display:block; margin:10px 0; flex:0 0 100%; }
 
 	.guide-list li:not([data-status="active"]) .vod-area { pointer-events:default; }
+	
+	.teacher-img { width:50%; }
+	.class-vod { width:80%; height:45vw; }
+	.class-list .head { padding:13px 20px; height:auto; }
+	.class-list .head span { display:block; }
+	.class-list .head strong { display:block; height:auto; }
+	.class-list li { flex:0 0 100%; width:100%; }
+	.class-list .body { padding:13px 20px }
 }
