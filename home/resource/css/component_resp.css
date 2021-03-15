@@ -61,7 +61,7 @@
 	.header-area.open:after { opacity:0; }
 	.header-area .logo { z-index:2; position:absolute; left:25px; top:45%; transform:translateY(-50%); margin:0; }
 	.header-area .logo span,
-	.footer-area .logo span { left:70px; top:12px; font-size:20px}
+	.footer-area .logo span { left:70px; top:13px; font-size:20px}
 	.header-area .btn-menu { z-index:2; display:block; position:absolute; top:19px; right:18px; }
 	.header-area.open .btn-menu:after,
 	.header-area.open .btn-menu:before,
@@ -122,8 +122,6 @@
 	.class-point-list li .desc { top:100%; left:0; margin:30px 0 0 20px; text-align: left; font-size:20px; padding-right:80px; }
 
 
-	.cont-area.class .btn-area { margin-top:40px; margin-bottom:50px; }
-	.detail-area .cont-grid { padding:80px 25px; }
 	.detail-class:after { background-size:contain;}
 	.class-info-list { flex-wrap:wrap; }
 	.class-info-list li { flex:0 1 auto; width:calc(50% - 28px); margin:14px; }

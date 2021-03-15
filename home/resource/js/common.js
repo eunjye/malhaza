@@ -205,7 +205,7 @@
 			}
 		},
 		guideVod: function() {
-			var $item = $('.guide-list li');
+			var $item = $('.guide-list .item');
 
 			$item.on('click', function(){
 				var _prev = $(this).attr('data-status');
@@ -336,7 +336,6 @@
 				win[namespace].status.scrollCheck.init();
 				win[namespace].guideVod();
 				win[namespace].scrollToTop();
-
 
 				if (!!$('.ui-inview').length) {
 					$('.ui-inview').each(function(idx, item){
