@@ -289,7 +289,7 @@
 /* mobile */
 @media (max-width:500px) {
 	.intro-tit img { width:230px; }
-	.intro-desc { width:24vw; height:24vw; font-size:14px; padding:17px 0 0 17px; right:40px; top:75px; }
+	.intro-desc { width:26vw; height:26vw; font-size:3.8vw; padding:5vw 0 0 5vw; right:40px; top:75px; }
 	.intro-vod { margin-top:20px; padding-top:68vw; width:67vw; }
 	.intro-vod-txt { font-size:3.5vw; }
 	.intro-box .subject img { width:140px; }
