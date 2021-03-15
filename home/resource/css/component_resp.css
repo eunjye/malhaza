@@ -62,22 +62,30 @@
 	.header-area .logo { z-index:2; position:absolute; left:25px; top:45%; transform:translateY(-50%); margin:0; }
 	.header-area .logo span,
 	.footer-area .logo span { left:70px; top:12px; font-size:20px}
-	.header-area .btn-menu { z-index:2; display:block; position:absolute; top:19px; right:25px; }
+	.header-area .btn-menu { z-index:2; display:block; position:absolute; top:19px; right:18px; }
 	.header-area.open .btn-menu:after,
 	.header-area.open .btn-menu:before,
 	.header-area.open .btn-menu span { background:#000; }
-	.header-area.open .btn-menu:before { transform:rotate(45deg); top:14px; left:2px; }
-	.header-area.open .btn-menu:after { transform:rotate(-45deg); top:14px; left:2px; }
+	.header-area.open .btn-menu:before { transform:rotate(45deg); top:14px; left:5px; }
+	.header-area.open .btn-menu:after { transform:rotate(-45deg); top:14px; left:5px; width:75% }
 	.header-area.open .btn-menu span { width:0; }
 
-	.header-util { position:absolute; top:12px; right:50px; float:none; margin:0; }
-	.header-util > span { margin:0 8px; }
+
+	.header-util .user-info { display:none; }
+	.header-util { position:absolute; float:none; margin:0; top:13px; right:50px; }
+	.header-util > span { margin:0 4px; }
 	.header-util a span {margin-top:-5px;}
+	.login .header-util { top:82px; left:0; text-align:right; width:100%; padding:0 25px; }
+	.login .header-util .user-info { display:block; }
+	.login .header-util .user-info { float:left; font-size:16px; margin-top:10px; }
+	.login .header-util .user-info span { font-weight:700; font-size:20px; }
 
 	.logo img { width:70px; height:auto; }
 	.logo span { font-size:25px; }
-	.gnb-area .nav-d1 a { display:block; height:50px; line-height:52px; padding:0 15px; border-bottom:1px solid #e8e7e7; overflow:hidden; }
+	.gnb-area .nav-d1 a { display:block; height:50px; line-height:52px; padding:0 25px; border-bottom:1px solid #e8e7e7; overflow:hidden; }
 	.nav-d1 { width:100%; padding:0;overflow-y:auto; border-top:1px solid #8f8b8a; }
+	.login .nav-d1 {padding-top:70px}
+	.nav-d1 > li:first-child { border-top:1px solid #e8e7e7; }
 	.nav-d1 > li { display:block; margin:0; color:#000; font-size:20px; text-align:left; }
 	.nav-d1 > li > a:hover, 
 	.nav-d1 > li:hover > a,
@@ -229,19 +237,22 @@
 	.support-info { margin:0; }
 	.support-info > div { float:none; width:100%; padding:0; display:block; }
 	.support-info > div + div { margin-top:10vw; }
-	.support-info dt { margin-bottom:1vw; font-size:26px; }
-	.support-info .contact { margin-top:4vw; font-size:20px; }
+	.support-info dt { margin-bottom:1vw; font-size:20px; }
+	.support-info .contact { margin-top:4vw; font-size:16px; }
 	.support-info .support-ico { right:-4%; }
-	.support-info a { height:40px; line-height:43px; font-size:18px;}
-	.support-info p { font-size:14px; font-weight:300; }
+	.support-info a {display:inline-block; width:auto; height:35px; line-height:38px; font-size:16px; padding:0 20px; }
+	.support-info p { font-size:14px; font-weight:300; padding-right:100px; }
+	.cont-area.support .cont-grid { padding:40px 25px; }
+	.support-info .support-ico { right:0; width:80px; padding-top:80px; top:0 }
 
 	/* detail */
+	.detail-intro { min-height:0; }
 	.teacher-name { font-size:50px; }
-	.class-vod { display:block; width:60%; margin:0; max-height:100%; height:30vw; max-height:350px; }
+	.class-vod { display:none; width:60%; margin:0; max-height:100%; height:30vw; max-height:350px; }
 	.teacher-img { width:45%; }
 	.teacher-info .desc { font-size:25px; }
 	.teacher-info .desc span { margin-top:8px; display:block; }
-	.detail-intro .teacher-info { display:block; width:100%; background-image:none; margin:30px 0 0; }
+	.detail-intro .teacher-info { display:block; width:100%; background-image:none; margin:20px 0 0; }
 	.class-tit:before { zoom:0.7; margin-top:-8px;}
 	.bul-check { margin-top:20px; margin-right:40%; }
 	.bul-check > li{ font-size:16px; background-position:0 2px; }
@@ -277,6 +288,19 @@
 
 /* mobile */
 @media (max-width:500px) {
+	.intro-tit img { width:230px; }
+	.intro-desc { width:24vw; height:24vw; font-size:14px; padding:17px 0 0 17px; right:40px; top:75px; }
+	.intro-vod { margin-top:20px; padding-top:68vw; width:67vw; }
+	.intro-vod-txt { font-size:3.5vw; }
+	.intro-box .subject img { width:140px; }
+	.intro-box.box1 { width:67vw;}
+
+	.info-list > div { border-top-width:1px; }
+
+	.bul-base > li { text-align:left; font-size:14px; padding-left:11px; }
+	.bul-base > li:before { width:4px; height:4px; margin-left:-11px; }
+
+
 	.video-js .vjs-big-play-button .vjs-icon-placeholder:before { font-size:1.5em; }
 
 	.paging-link,

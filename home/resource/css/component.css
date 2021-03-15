@@ -41,10 +41,10 @@ textarea:focus, input:focus, input:focus + label, button:focus, a:focus, select:
 
 .btn-menu { position:relative; display:inline-block; width:30px; height:30px; }
 .btn-menu:before,
-.btn-menu:after { position:absolute; left:5%; display:block; width:90%; height:3px; background:#252525; transition:all ease-in-out .25s; content:""; }
-.btn-menu:before { top:10%; }
-.btn-menu:after { top:82%; }
-.btn-menu span { position:absolute; overflow:hidden; top:50%; left:5%; display:block; width:90%; height:3px; background:#252525; color:transparent; margin-top:-1px; transition:all ease-in-out .25s; }
+.btn-menu:after { position:absolute; left:12%; display:block; width:75%; height:2px; background:#252525; transition:all ease-in-out .25s; content:""; }
+.btn-menu:before { top:19%; }
+.btn-menu:after { top:74%; width:40%; left:44%; }
+.btn-menu span { position:absolute; overflow:hidden; top:50%; right:15%; display:block; width:60%; height:2px; background:#252525; color:transparent; margin-top:-1px; transition:all ease-in-out .25s; }
 
 /* table */
 .tbl-base { }
@@ -145,7 +145,7 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .nav-d2 > li > a:hover,
 .nav-d2 > li > a:focus { font-weight:700; }
 
-.floating-area { z-index:99; position:fixed; bottom:0; left:50%; transform:translateX(-50%); max-width:1500px; width:100%; }
+.floating-area { z-index:9; position:fixed; bottom:0; left:50%; transform:translateX(-50%); max-width:1500px; width:100%; }
 .floating-util { position:absolute; right:1.5%; bottom:50px; width:64px; border-radius:32px; border:2px solid #dadadc; overflow:hidden;}
 .floating-util button { display:block; position:relative; background:#fff; width:100%; height:60px; background:url('../img/sp_floating.png') 0 0/60px auto no-repeat #fff; padding:19px 13px 16px; transition:background-color ease-in-out .2s; } 
 .floating-util button + button:before { position:absolute; display:block; width:35px; left:13px; top:-1px; height:2px; background:#e2e1e3; content:""; } 
@@ -559,6 +559,7 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .lb-check.light { color:#fff; }
 
 @media (max-width:1300px) {
+
 	.visual-area.main { height:calc(61vw + 100px); }
 	.slider-pagination.type-num { bottom:4.6%; }
 
@@ -618,6 +619,7 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 
 /* only PC */
 @media (min-width:1025px) {
+	.user-info { display:none; }
 
 	.only-resp { display:none !important; }
 	

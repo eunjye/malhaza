@@ -301,6 +301,25 @@
 				}
 			});
 		},
+		stepRolling: {
+			flag: false,
+			init: function(){
+				var $wrap = $('.register-area');
+				if (!$wrap.hasClass('ui-in')) { 
+					$wrap.stop().scrollLeft(0);
+					win[namespace].stepRolling.flag = false;
+				} else if (!win[namespace].stepRolling.flag) {
+					win[namespace].stepRolling.flag = true;
+					$wrap.animate({
+						scrollLeft: 600
+					}, 12000, 'linear');
+
+					$wrap.on('touchstart', function(){
+						$wrap.stop();
+					})
+				}
+			}
+		},
 		init: function(){
 
 			$(win).off('.'+namespace)
@@ -320,7 +339,9 @@
 
 
 				if (!!$('.ui-inview').length) {
-					win[namespace].isInview($('.ui-inview'));
+					$('.ui-inview').each(function(idx, item){
+						win[namespace].isInview($(item));
+					})
 					win[namespace].skillAni.init(true);
 				}
 				win[namespace].nav.hoverMenu(); // hover evt on nav
@@ -329,6 +350,7 @@
 
 			})
 			$(doc).on('scroll.'+namespace, function(){
+				win[namespace].stepRolling.init();
 			})
 		}
 	}
