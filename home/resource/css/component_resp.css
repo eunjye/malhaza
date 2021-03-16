@@ -133,7 +133,11 @@
 	.class-list .head span { display:block; text-align:left; }
 	.class-list .head strong { display:block; height:auto; }
 	
-	.paging-link a { margin:0; }
+	.paging-link a { margin:0; width:24px; height:24px; line-height:24px; padding-bottom:4px;}
+	.btn-jump { width:24px; margin:0 5px;}
+	.btn-jump.first:after, .btn-jump.last:after, .btn-jump:before { margin-left:-6px; }
+	.btn-jump.first:after, .btn-jump.last:after, .btn-jump:before { margin-left:-6px; }
+	.btn-jump.first:before, .btn-jump.first:after, .btn-jump.prev:before { margin-left:-5px; }
 
 	.register-area { overflow:auto; margin-bottom:80px; }
 	/* .register-area .register-step { width:1000px; height:300px; background:url('../img/register_step_mo.png') 0 0/contain no-repeat; } */
