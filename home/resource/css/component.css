@@ -546,13 +546,13 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .class-point-list li img { position:absolute; right:-10px; top:100%; margin-top:-10px; }
 .class-point-list li strong { font-weight:800; }
 .class-point-list li .desc { position:absolute; top:100%; margin-top:30px; left:0; width:100%; text-align: center; }
-.class-point-list li i { white-space:nowrap; position:absolute; bottom:80%; right:100%; margin-right:-20px; display:inline-block; height:60px; line-height:60px; border-radius:30px; background:#E16E4A; color:#fff; font-family:'GMarketSans'; font-size:20px; font-weight:700; font-style:italic; padding:0 30px; box-shadow:10px 10px 0 rgba(175,112,9,0.25);}
+.class-point-list li i { white-space:nowrap; position:absolute; bottom:80%; right:100%; margin-right:-20px; display:inline-block; height:60px; line-height:60px; border-radius:30px; background:#FF6E47; color:#fff; font-family:'GMarketSans'; font-size:20px; font-weight:700; font-style:italic; padding:0 30px; box-shadow:10px 10px 0 rgba(175,112,9,0.25);}
 .class-point-list li i:before { position:absolute; top:100%; right:-10px; display:block; width:34px; height:27px; background:url('../img/balloon_tip.png') 0 0/auto auto no-repeat; content:""; margin-top:-10px; }
 .point-inner { float:left; width:63%; padding-right:20px; }
 .vod-list { position:absolute; top:40px; right:-45px; width:41.5%; background:#fff; border:2px solid #ebb755; padding:90px 50px 50px; }
 .vod-list .title{ position:absolute; top:-30px; right:-10px; display:inline-block; font-size:35px; font-weight:700; font-family:'GMarketSans'; color:#fcf76c; -webkit-transform: skew(-20deg);
 	-moz-transform: skew(-20deg);
-	transform: skew(-20deg); background:#e16e4a; padding:10px 40px 3px; white-space:nowrap; border-top-left-radius:10px;}
+	transform: skew(-20deg); background:#FF6E47; padding:10px 40px 3px; white-space:nowrap; border-top-left-radius:10px;}
 .vod-list .title::before {position:absolute; display: block; width:22px; height:7px; top:100%; left:-2px; content:""; background:url('../img/skew_tip.png') 0 0/auto auto no-repeat; }
 .vod-list li:first-child { margin-top:0; }
 .vod-list li { overflow:hidden; margin-top:30px; }
