@@ -2,7 +2,7 @@
 
 ;(function ($, win, doc, undefined) {
 	
-	var namespace = 'GC';
+	var namespace = 'malhaza';
 
 	$.fn.inView = function() {
 		var $el = $(this);
@@ -320,6 +320,45 @@
 				}
 			}
 		},
+		accoInfo: function(){
+			$('.btn-acco').off('click.accoInfo').on('click.accoInfo', function(){
+				var $ts = $(this);
+				var $target = $('#'+$ts.attr('data-pnl'));
+				if ($ts.hasClass('open')) { 
+					$ts.removeClass('open');
+					$target.stop().slideUp(200);
+				} else {
+					$ts.addClass('open');
+					$target.stop().slideDown(200);
+				}
+			})
+		},
+		tab: {
+			init: function(){
+				$('.ui-tab').each(function(idx, item){
+					var $wrap = $(item);
+					var $btns = $wrap.find('.ui-tab-btn');
+					var $pnl = $wrap.find('.ui-tab-pnl');
+					var $nowBtn = $btns.filter('.selected');
+					var _idx = $btns.index($nowBtn);
+					
+					console.log($('.ui-tab'));
+					$pnl.eq(_idx).show();
+				})
+				$('.ui-tab-btn').on('click', function(){
+					var $ts = $(this);
+					var $wrap = $ts.closest('.ui-tab');
+					var $btns = $wrap.find('.ui-tab-btn');
+					var idx = $btns.index($ts);
+					var $pnls = $wrap.find('.ui-tab-pnl');
+					
+					$btns.removeClass('selected');
+					$ts.addClass('selected');
+					$pnls.hide();
+					$pnls.eq(idx).show();
+				})
+			}
+		},
 		init: function(){
 
 			$(win).off('.'+namespace)
@@ -336,6 +375,8 @@
 				win[namespace].status.scrollCheck.init();
 				win[namespace].guideVod();
 				win[namespace].scrollToTop();
+				win[namespace].accoInfo();
+				win[namespace].tab.init();
 
 				if (!!$('.ui-inview').length) {
 					$('.ui-inview').each(function(idx, item){
