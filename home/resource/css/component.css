@@ -733,7 +733,7 @@ input:checked + .lb_check { background:#79dee2; border-color:transparent; }
 .ui-tab.type3 .ui-tab-btn.selected:after { position:absolute; top:100%; left:50%; margin-left:-10px; border-top:10px solid #FF8C4B; border-right:10px solid transparent; border-bottom:10px solid transparent; border-left:10px solid transparent; content:""; width:0; height:0; display:block; padding:0; }
 
 /* plugins: modal */
-.ui-modal{display:none;position:fixed;top:50%;left:0;right:0;width:100%;overflow-y:auto;overflow-x:hidden;z-index:1000; background:#fff; max-width:480px; margin:0 auto; transform:translateY(-50%); padding:35px 55px;box-shadow:5px 0 13px rgba(0,0,0,.5);}
+.ui-modal{display:none;position:fixed;top:50%;left:25px;right:25px;width:90%;overflow-y:auto;overflow-x:hidden;z-index:1000; background:#fff; max-width:480px; margin:0 auto; transform:translateY(-50%); padding:35px 55px;box-shadow:5px 0 13px rgba(0,0,0,.5);}
 .ui-modal.ready:after{content:"";display:block;width:100%;height:100%;position:fixed;z-index:0;background:rgba(0,0,0,0.7);opacity:0;transition:opacity 0.15s ease-out}
 .ui-modal.ready{display:block}
 .ui-modal.open:after{opacity:1}
@@ -759,7 +759,7 @@ input:checked + .lb_check { background:#79dee2; border-color:transparent; }
 .ui-modal.type-normal.ps-bottom .ui-modal-wrap{left:50%;bottom:-100px;transform:translateX(-50%);transition:opacity 0.2s ease-in, bottom 0.2s ease-in}
 .ui-modal.open.type-normal.ps-bottom .ui-modal-wrap{bottom:10px;opacity:1}
 .ui-modal .btn-area { text-align:center; border-top:2px solid #464646; margin-top:20px; padding-top:20px; }
-.ui-modal .btn-area .btn-base { height:50px; line-height:50px; font-size:20px; min-width:245px; }
+.ui-modal .btn-area .btn-base { height:50px; line-height:50px; font-size:20px; max-width:245px; margin:0; }
 
 .modal-desc { display:block; margin-bottom:10px; text-align:right; font-size:15px; font-weight:300;}
 
