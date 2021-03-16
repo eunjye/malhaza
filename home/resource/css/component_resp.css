@@ -24,6 +24,7 @@
 	.btn-close { width:40px; height:40px; }
 
 	.cont-grid { padding:12% 5%; }
+	.cont-grid.type2 { padding-top:70px; }
 
 	.visual-area.main { height: calc(61vw + 70px); }
 	.visual-area .visual-inner { padding-top:70px; }
@@ -145,6 +146,10 @@
 	.register-area .arrow.n4 { left:728px; top:140px; }
 	
 	.guide-list.slick-slider .guide-list .desc { font-size:16px !important; padding:20px 15px 25px; }
+
+	.regi-head { position:relative; }
+	.regi-head strong i.cost { display:block; }
+	.regi-head .btn-base { position:absolute; right:30px; top:25px; }
 }
 
 @media (max-width:765px) {
@@ -278,6 +283,22 @@
 	.vod-list .desc{  text-align:center; float:none; padding:20px 10px 0; width:100%; font-size:16px; }
 	.vod-list .desc strong { font-size:18px; }
 	.vod-list .video-js .vjs-progress-control { flex:1 1 45%; }
+
+	.cont-tit1 { font-size:32px; }
+	.cont-tit2 { font-size:26px; margin-bottom:25px; }
+	.txt-info { font-size:14px; }
+	.cont-inner { padding:45px 25px; }
+	.cont-inner.type-box { padding:45px 25px; }
+	.regi-head { padding:20px 130px 150px 20px; }
+	.regi-head strong { display:table-cell; font-size:20px; }
+	.regi-head strong i.cost br { display:block; }
+	.regi-head .btn-base { position:absolute; right:25px; top:25px; }
+	.regi-body { padding:20px; margin-left:15px; margin-right:10px; margin-top:-140px; }
+	.benefit-list li { width:100%; margin:20px 0; text-align:left; }
+	.benefit-list li img { max-width:230px; width:100%; }
+	.btn-base.type3 { height:38px; line-height:43px; font-size:20px; padding:0 15px; }
+	.benefit-info dt { font-size:16px;}
+	.box-base { padding:20px; }
 }
 /* only mo */
 @media (min-width:501px) {
@@ -310,7 +331,7 @@
 	.btn-more-view2:after { display:inline-block; vertical-align:middle; width:10px; height:10px; border-bottom:1px solid #252525; border-right:1px solid #252525; transform:rotate(45deg); margin:-9px 0 0 20px; content:""; }
 	/* table */
 	.tbl-base th,
-	.tbl-base td { font-size:14px; }
+	.tbl-base td { font-size:11px; padding:2px; vertical-align:top;}
 
 	.class-list li { display:block; margin:10px 0; flex:0 0 100%; }
 
