@@ -359,6 +359,32 @@
 				})
 			}
 		},
+		modal:{
+			open: function(targetId){
+				if (!$('.layer-wrap').length) {
+					$('main').append($('<div class="layer-wrap"></div>'));
+				}
+				
+				var $bg = $('.layer-wrap');
+				var $target = $('#' + targetId);
+
+				$bg.show();
+				$target.appendTo($bg).show().addClass('open');
+			},
+			close: function(targetId) {
+				var $bg = $('.layer-wrap');
+				var $target = $('#' + targetId);
+				var _isVisible = false;
+
+				$target.hide().removeClass('open');
+				$bg.find('.ui-modal').each(function(idx, item){
+					_isVisible = !!$(item).is(':visible') ? true : _isVisible;
+				})
+				if (!_isVisible){
+					$bg.hide();
+				}
+			}
+		},
 		init: function(){
 
 			$(win).off('.'+namespace)
