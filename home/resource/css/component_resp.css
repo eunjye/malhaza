@@ -355,9 +355,9 @@
 	.class-tit3 { font-size:26px; margin-bottom:20px; }
 
 	.form-search .form-inp { width:calc(100% - 100px)}
-	.slider-class.type2 .slick-dots { position:relative; text-align:center; margin-bottom:30px; margin-top:10px; }
-	.slider-class.type2 .slick-dots > li { display:inline-block; width:7px; height:7px; border-radius:50%; background:#fff; overflow:hidden; margin:0 5px; color:transparent; box-shadow:4px 4px 5px rgba(0,0,0,0.1);}
-	.slider-class.type2 .slick-dots > li.slick-active { background:#725eb4; }
+	.slider-class .slick-dots { position:relative; text-align:center; margin-bottom:30px; margin-top:10px; }
+	.slider-class .slick-dots > li { display:inline-block; width:10px; height:10px; border-radius:50%; background:#fff; overflow:hidden; margin:0 5px; color:transparent; box-shadow:4px 4px 5px rgba(0,0,0,0.1);}
+	.slider-class .slick-dots > li.slick-active { background:#725eb4; }
 
 
 	.myclass-area .cont-inner.type-box:last-child { padding:25px;}
@@ -370,7 +370,7 @@
 	.myclass-area .ui-tab-btns { margin:20px 0;}
 
 	.slider-class { padding:0; }
-	.slider-class .slick-list { padding:0 65px 0 25px !important}
+	.slider-class .slick-list { padding:0 30px 0 15px !important}
 }
 /* only mo */
 @media (min-width:501px) {
