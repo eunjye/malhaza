@@ -345,14 +345,14 @@
 	.slider-class.type2 .slick-prev { margin-left:20px; }
 	.slider-class.type2 .slick-next { margin-right:20px; }
 	
-	.class-list2 { margin:-20px 60px; justify-content:center;}
-	.class-list2 .item { flex:0 0 auto; width:71vw; margin:20px 20px; }
-	.class-list2 .item strong { font-size:16px; }
+	.class-list2 { margin:0 60px; justify-content:center;}
+	.class-list2 .item { flex:0 0 auto; width:71vw; margin:10px 10px; }
+	.class-list2 .item strong { font-size:16px; padding-bottom:8%;}
 
 	.class-tit2 { margin-top:40px; font-size:26px; }
 	.class-tit2:first-child { margin-top:0; }
 
-	.class-tit3 { font-size:26px; margin-bottom:20px; }
+	.class-tit3 { font-size:26px; margin-bottom:10px; }
 
 	.form-search .form-inp { width:calc(100% - 100px)}
 	.slider-class .slick-dots { position:relative; text-align:center; margin-bottom:30px; margin-top:10px; }
