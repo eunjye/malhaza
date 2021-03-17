@@ -466,7 +466,7 @@
 	.service-box .subject { font-size:18px; }
 
 
-	.class-area .cont-inner.type-box { padding:50px 15px; margin-left:25px; margin-right:25px; }
+	.class-area .cont-inner.type-box { padding:50px 15px 10px; margin-left:25px; margin-right:25px; }
 	
 	.class-tit2:before { display:none; }
 	.class-tit2 { margin-top:25px; }
