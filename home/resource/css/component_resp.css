@@ -379,6 +379,18 @@
 
 /* mobile */
 @media (max-width:500px) {
+
+	.ui-modal { padding:30px 25px; width:auto; }
+	.ui-modal-head h2 { font-size:20px; }
+	.ui-modal .btn-area { border-top-width:1px; }
+	.ui-modal .btn-area .btn-base { height:40px; line-height:40px; max-width:100%; font-size:16px; }
+	.cost-data > div.result > dd { font-size:16px; }
+	.cost-data > div {padding:13px 15px; }
+	.modal-box p { font-size:14px; }
+	.modal-desc {font-size:13px; margin-top:-5px; margin-bottom:10px; }
+	.cost-data > div.form-item .inp {font-size:14px; }
+	.cost-data > div.form-item > dt { padding-left:15px; }
+
 	.cont-grid.type2 { padding-bottom:50px; }
 
 	.ui-tab.type3 .ui-tab-btns { flex-wrap:wrap; }
