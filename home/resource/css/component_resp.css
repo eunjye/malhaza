@@ -159,11 +159,14 @@
 	.service-area .cont-inner.type-box { padding:60px 60px; margin:0 25px; }
 
 
-	.class-list2 { flex-wrap:wrap; margin:-20px 60px; }
+	.class-list2 { flex-wrap:wrap; width:auto; }
 	.class-list2 .item { flex:0 0 auto; width:calc(50% - 40px); margin:20px 20px; }
-	.class-list2 .item strong { font-size:1.53vw; }
+	.class-list2 .item strong { font-size:16px; }
+	.class-area .cont-inner.type-box { padding:50px 25px; }
+	.class-list2 { justify-content:space-between; }
+	.type-box .class-list2 { margin:0; }
+	.type-box .class-list2 .item { flex:0 1 auto; }
 
-	.myclass-area .type-box .class-list2 { margin:-20px -15px;}
 	.class-tit4 { font-size:26px; }
 	.myinfo-list .item > dt { font-size:18px; }
 	.point-info { padding-right:30px;}
@@ -175,16 +178,15 @@
 
 	.myinfo-list { flex-wrap:wrap; }
 	.myinfo-list .item { flex:0 0 100% !important; width:100%; margin-bottom:25px; }
-	.myclass-area .cont-inner.type-box:last-child { margin-bottom:0; }
-
+	.myclass-area .cont-inner.type-box.list { margin-bottom:0; padding:25px;}
+	.myclass-area .cont-inner.type-box .class-list2 { margin-top:-10px; }
 	
-	.type-box .class-list2 { margin:0 12px;}
-	.type-box .class-list2 .item { flex:0 1 43%; margin:0 20px 5%;}
+
 }
 
 @media (max-width:765px) {
 
-	
+	.type-box .class-list2 { margin-bottom:0; }
 	.type-box .class-list2 .item { flex:0 1 71vw; margin:10px auto;}
 
 
@@ -369,7 +371,6 @@
 	.slider-class .slick-dots > li.slick-active { background:#725eb4; }
 
 
-	.myclass-area .cont-inner.type-box:last-child { padding:25px;}
 	.myclass-area .ui-tab-btns { margin:20px 25px 20px; }
 	.class-tit.type2{ font-size:22px;}
 	.ui-tab-btn { font-size:16px; }
