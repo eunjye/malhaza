@@ -36,13 +36,16 @@
 					<div class="cont-inner type-box">
 						<div class="ui-tab type3">
 							<div class="ui-tab-btns">
-								<button type="button" class="ui-tab-btn selected"><span>자주 묻는질문 </span></button>
-								<button type="button" class="ui-tab-btn"><span>구독 멤버십</span></button>
+								<button type="button" class="ui-tab-btn"><span>자주 묻는질문 </span></button>
+								<button type="button" class="ui-tab-btn selected"><span>구독 멤버십</span></button>
 								<button type="button" class="ui-tab-btn"><span>1:1 문의하기</span></button>
 								<button type="button" class="ui-tab-btn"><span>말하자앱 </span></button>
 								<button type="button" class="ui-tab-btn"><span>교재 구매</span></button>
 							</div>
 							<div class="ui-tab-pnls">
+								<div class="ui-tab-pnl">
+									자주 묻는질문 탭
+								</div>
 								<div class="ui-tab-pnl">
 									<div class="regi-list type2">
 										<div class="regi-item">
@@ -153,9 +156,6 @@
 									</div>
 								</div>
 								<div class="ui-tab-pnl">
-									구독 멤버십 탭
-								</div>
-								<div class="ui-tab-pnl">
 									1:1 문의하기 탭
 								</div>
 								<div class="ui-tab-pnl">
@@ -167,7 +167,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="cont-inner">
+					<div class="cont-inner" id="costInfo">
 						<h3 class="cont-tit2">무이자 할부 안내 <button type="button" class="btn-acco" data-pnl="pnlA"><span class="blind">펼치기</span></button></h3>
 
 						<div class="toggle-area" style="display:none;" id="pnlA">
@@ -336,7 +336,13 @@
 				;(function ($, win, doc, undefined) {
 					$(doc).on('ready.malhaza', function(){
 
-						
+						$('.ui-tab-btn').on('click', function(){
+							if ($('.ui-tab-btn').index($(this)) !== 1) {
+								$('#costInfo').hide();
+							} else {
+								$('#costInfo').show();
+							}
+						})
 					});
 				})(jQuery, window, document);
 			</script>

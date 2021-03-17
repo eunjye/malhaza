@@ -379,6 +379,14 @@
 
 /* mobile */
 @media (max-width:500px) {
+	.class-tit4 { font-size:22px; word-break:keep-all;}
+	.myinfo-list .item { margin:0 0 25px; }
+	.myclass-area .cont-inner.type-box{ padding-bottom:20px; }
+	.myinfo > div > dt {padding-left:0; padding-right:10px;}
+	.ui-tab-btn { margin:2px; }
+	.myclass-area .ui-tab-btns { margin:0 -15px 30px; }
+	.myclass-area .type2 .ui-tab-btns { margin:20px 0; }
+	.myinfo > div > dd { word-break:break-all;}
 
 	.ui-modal { padding:30px 25px; width:auto; }
 	.ui-modal-head h2 { font-size:20px; }
