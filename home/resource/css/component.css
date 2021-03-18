@@ -803,6 +803,7 @@ input:checked + .lb_check { background:#79dee2; border-color:transparent; }
 
 
 @media (max-width:1300px) {
+	.footer-link li:before { margin:0 10px; }
 	.class-list2 { width:932px; }
 	.class-list2 .item { margin:6px; flex-basis:298px; }
 
