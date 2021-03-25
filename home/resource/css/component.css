@@ -32,10 +32,12 @@ textarea:focus, input:focus, input:focus + label, button:focus, a:focus, select:
 /* button */
 [class*="btn-"]:hover { text-decoration:none; }
 .btn-area { margin:40px 0 0; }
+.btn-area.col2 { text-align:center; }
 .btn-base { z-index:0; display:inline-block; transition:all .3s ease-in-out; text-decoration:none; }
-.btn-base.primary { color:#fff; }
-.btn-base.primary:before { opacity:0; }
-.btn-base.primary:hover { background:linear-gradient(-135deg, #0072bc 0%, #00b49d 100%); }
+.btn-base.primary { padding:0 65px; height:70px; line-height:70px; background:#1B406F; font-size:24px; font-weight:700; color:#fff; text-align:center; margin-left:10px; }
+.btn-base.primary:hover { background:#112f55 }
+.btn-base.secondary:hover { background:#d6d6d6 }
+.btn-base.secondary { padding:0 65px; height:70px; line-height:70px; background:#dfdfdf; font-size:24px; font-weight:700; color:#000; text-align:center; }
 .btn-base .ico-arr { margin:-4px 0 0 5px; }
 .btn-base .ico-download { margin:-4px 0 0 4px; }
 .btn-base.type2 { padding:0 55px; height:70px; line-height:70px; border-radius:35px; background:#7FD4B7; color:#fff; font-weight:700; font-size:24px; text-align:center; }
