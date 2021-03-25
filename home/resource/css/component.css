@@ -924,8 +924,6 @@ input:checked + .lb-rdo:before { background-position-y:-24px;}
 	.only-resp { display:none !important; }
 	
 	.header-area.hover { height:298px; background:#fff; box-shadow:0 5px 8px rgba(0,0,0,.1); }
-	.header-area.hover .img-logo { display:none; }
-	.header-area.hover .img-logo.dark { display:inline-block; }
 	.header-area.hover .nav-d1 > li { color:#000; font-weight:400; }
 	.header-area.hover .nav-d2 { display:block; }
 }
