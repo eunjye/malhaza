@@ -33,12 +33,14 @@
 	
 	.cont-area.intro .cont-grid { padding-bottom:0}
 	.intro-desc { left:auto; right:5%; width:28vw; height:28vw; top:100px; font-size:4vw; padding:6% 0 0 6%; transform:none; }
-	.intro-box.box2 { display:none; }
 	.intro-vod { max-width:600px; width:75vw; padding-top:600px; margin-bottom:-5%; border-radius:0 10vw 0 10vw; }
 	.intro-vod .video-js { top:21%; height:55%; max-height:350px; top:50%; transform:translateY(-55%) }
 	.intro-vod-txt { top:50%; margin-top:185px; }
-	.intro-box.box1 { float:right; max-width:600px; width:75vw; right:0; position:relative; top:auto; bottom:auto; right:auto; padding:7.5vw 6.5vw; border-radius:10vw 10vw 0 0; }
-	.intro-box.box1 .img-bg { transform:scale(.7); right:-20px; bottom:-40px; }
+	.intro-box.box1 { float:right; max-width:450px; width:60vw; max-height:400px; height:55vw; right:0; position:relative; top:auto; bottom:auto; right:auto; padding:7.5vw 6.5vw; border-radius:10vw; }
+	.intro-box.box1 .img-bg { zoom:0.8 }
+	.intro-box.box1:after { zoom:0.6 }
+	.intro-box.box2 { float:left; max-width:450px; width:60vw; max-height:250px; height:33vw; right:0; position:relative; top:auto; bottom:auto; right:auto; padding:7.5vw 6.5vw; border-radius:10vw 10vw 0 0; margin-top:-20%; }
+	.intro-box.box2 .img-bg { transform:scale(.7); right:-20px; bottom:-40px; }
 	.cont-area.intro .cont-grid:after {display:block; clear:both; content:""}
 
 	.cont-area.event .event-tit { font-size:4.4vw; }
@@ -240,8 +242,8 @@
 	.intro-vod .video-js { top:19%; transform:none; }
 	.intro-vod-txt { top:79%; margin-top:0; font-size:4vw; }
 	.intro-tit img { width:70vw; }
-	.intro-box .subject img { width:45vw; }
-	.intro-box.box1 .img-bg { right:-100px; bottom:-60px; transform:scale(0.4); }
+	.intro-box .subject img { zoom:0.7 }
+	.intro-box.box1 .img-bg { zoom:0.7 }
 	.intro-box.box1:after {display:none;}
 
 	.cont-area.event .cont-grid { padding-top:10%; padding-bottom:10%; }
@@ -439,8 +441,12 @@
 	.intro-desc { width:26vw; height:26vw; font-size:3.8vw; padding:5vw 0 0 5vw; right:40px; top:75px; }
 	.intro-vod { margin-top:20px; padding-top:68vw; width:67vw; }
 	.intro-vod-txt { font-size:3.5vw; }
-	.intro-box .subject img { width:140px; }
-	.intro-box.box1 { width:67vw;}
+	.intro-box .subject img { width:200px; }
+	.intro-box.box1 .img-bg { width:70%; }
+	.intro-box.box2 { margin-top:-10%; }
+	.intro-box.box2 .subject img { width:160px }
+	.intro-box.box1 .img-bg { zoom:0.58; }
+	.intro-box.box2:after { right:5px; }
 
 	.info-list > div { border-top-width:1px; }
 
