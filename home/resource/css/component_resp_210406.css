@@ -33,14 +33,12 @@
 	
 	.cont-area.intro .cont-grid { padding-bottom:0}
 	.intro-desc { left:auto; right:5%; width:28vw; height:28vw; top:100px; font-size:4vw; padding:6% 0 0 6%; transform:none; }
+	.intro-box.box2 { display:none; }
 	.intro-vod { max-width:600px; width:75vw; padding-top:600px; margin-bottom:-5%; border-radius:0 10vw 0 10vw; }
 	.intro-vod .video-js { top:21%; height:55%; max-height:350px; top:50%; transform:translateY(-55%) }
 	.intro-vod-txt { top:50%; margin-top:185px; }
-	.intro-box.box1 { float:right; max-width:450px; width:60vw; max-height:400px; height:55vw; right:0; position:relative; top:auto; bottom:auto; right:auto; padding:7.5vw 6.5vw; border-radius:10vw; }
-	.intro-box.box1 .img-bg { zoom:0.8 }
-	.intro-box.box1:after { zoom:0.6 }
-	.intro-box.box2 { float:left; max-width:450px; width:60vw; max-height:250px; height:33vw; right:0; position:relative; top:auto; bottom:auto; right:auto; padding:7.5vw 6.5vw; border-radius:10vw 10vw 0 0; margin-top:-20%; }
-	.intro-box.box2 .img-bg { transform:scale(.7); right:-20px; bottom:-40px; }
+	.intro-box.box1 { float:right; max-width:600px; width:75vw; right:0; position:relative; top:auto; bottom:auto; right:auto; padding:7.5vw 6.5vw; border-radius:10vw 10vw 0 0; }
+	.intro-box.box1 .img-bg { transform:scale(.7); right:-20px; bottom:-40px; }
 	.cont-area.intro .cont-grid:after {display:block; clear:both; content:""}
 
 	.cont-area.event .event-tit { font-size:4.4vw; }
@@ -65,7 +63,7 @@
 	.header-area.open:after { opacity:0; }
 	.header-area .logo { z-index:2; position:absolute; left:25px; top:45%; transform:translateY(-50%); margin:0; }
 	.header-area .logo span,
-	.footer-area .logo span { left:70px; top:13px; font-size:24px}
+	.footer-area .logo span { left:70px; top:13px; font-size:20px}
 	.header-area .btn-menu { z-index:2; display:block; position:absolute; top:19px; right:18px; }
 	.header-area.open .btn-menu:after,
 	.header-area.open .btn-menu:before,
@@ -182,47 +180,13 @@
 	.myinfo-list .item { flex:0 0 100% !important; width:100%; margin-bottom:25px; }
 	.myclass-area .cont-inner.type-box.list { margin-bottom:0; padding:25px;}
 	.myclass-area .cont-inner.type-box .class-list2 { margin-top:-10px; }
+	
+	
+	.teacher-img img {width: auto;height: 266px;}
 
-	.detail-class2 .teacher-img  { right:0; }
-	.teacher-info-box { width:350px; padding:35px; }
-	.teacher-info-box .tit { font-size:30px; }
-	.teacher-info-box .btn { font-size:16px; }
-	.teacher-info-box .btn .txt-s { font-size:14px; }
-
-	.class-datas dd strong { font-size:30px; }
-	.class-datas { font-size:16px; }
-	.class-datas dd .txt-sub { margin-top:0; }
-
-	.class-recommend .tit { font-size:30px; }
-	.class-recommend .tit:before { zoom:0.7; }
-	.class-recommend .cont { margin-top:20px; }
-	.class-recommend .cont > span:first-child { display:block; }
-	.class-recommend { font-size:20px; }
-	.class-recommend .highlight { padding:8px 15px 5px; }
-
-	.class-list3 .tit { font-size:30px; }
-	.recommend-list .subject { font-size:24px; }
 }
 
 @media (max-width:765px) {
-	.tbl-base th { font-size:14px; }
-	.tbl-base td { font-size:14px; }
-
-	p.bul-dot,
-	ul.bul-dot > li { font-size:14px; }
-	p.bul-dot:before,
-	ul.bul-dot > li:before { margin-top:-3px; }
-
-	.form-area.type-cert .img-certification { display:block; }
-	.form-area.type-cert .form-item { margin:10px 0 0; }
-
-	.terms-tit1 { font-size:20px; margin-bottom:10px; }
-	.terms-tit2 { font-size:16px; margin:30px 0 10px; }
-	.terms-tit1 + .terms-tit2 { margin-top:10px; }
-	.box-base.type-terms { font-size:14px; margin-bottom:15px; }
-	.box-base.type-terms p { margin-top:8px; }
-	.lb-chk { font-size:14px; }
-	.lb-chk:before { zoom:0.7; }
 
 	.type-box .class-list2 { margin-bottom:0; }
 	.type-box .class-list2 .item { flex:0 1 71vw; margin:10px auto;}
@@ -260,8 +224,8 @@
 	.intro-vod .video-js { top:19%; transform:none; }
 	.intro-vod-txt { top:79%; margin-top:0; font-size:4vw; }
 	.intro-tit img { width:70vw; }
-	.intro-box .subject img { zoom:0.7 }
-	.intro-box.box1 .img-bg { zoom:0.7 }
+	.intro-box .subject img { width:45vw; }
+	.intro-box.box1 .img-bg { right:-100px; bottom:-60px; transform:scale(0.4); }
 	.intro-box.box1:after {display:none;}
 
 	.cont-area.event .cont-grid { padding-top:10%; padding-bottom:10%; }
@@ -380,7 +344,7 @@
 	.box-base { padding:20px; }
 
 
-	.service-area .cont-inner.type-box { padding:50px 25px; margin:0; }
+	.service-area .cont-inner.type-box { padding:50px 25px; }
 	.service-box:before { float:none; margin:0 auto 25px; width:100px; height:100px; zoom:0.8}
 	.service-box .inner { float:none; width:100%; padding:0; }
 	.service-box .subject {font-size:20px; }
@@ -419,46 +383,6 @@
 
 	.slider-class { padding:0; }
 	.slider-class .slick-list { padding:0 30px 0 15px !important}
-
-	.detail-class2 .cont-grid { padding-bottom:0; }
-	.detail-class2 .detail-intro { min-height:400px; }
-	.detail-class2 .teacher-img { width:260px; right:-40px; }
-	.detail-class2 .teacher-img img { width:100%; height:auto; }
-
-	.teacher-info-box { width:200px; padding:20px; border-radius:25px 0 25px 0; }
-	.teacher-info-box .tit { font-size:24px; }
-	.teacher-info-box .desc { font-size:14px; margin:5px 0 15px; }
-	.teacher-info-box .btn-area { margin-top:10px; }
-	.teacher-info-box .btn { display:table; width:100%; padding-top:5px; font-size:14px; }
-	.teacher-info-box .btn > span { display:table-cell; vertical-align:middle; line-height:1; }
-	.teacher-info-box .btn .txt-s { font-size:12px; }
-	.teacher-info-box .btn.point { height:36px; padding-top:3px; }
-
-	.class-datas { flex-wrap:wrap; margin:20px -10px 0; }
-	.class-datas > div:first-child { margin:0 10px; }
-	.class-datas > div { flex:1 1 calc(50% - 20px); margin:0 10px; }
-	.class-datas dd strong { font-size:24px; }
-
-	.class-recommend .tit { font-size:24px; }
-	.class-recommend .tit:before { zoom:0.5; }
-	.class-recommend { font-size:16px; }
-
-	.class-list3 .tit { font-size:24px; margin-bottom:30px; }
-	.class-list3 .tit:before { zoom:0.7; }
-
-	.recommend-list { flex-wrap:wrap; margin:0 -10px; }
-	.recommend-list > li:first-child { margin:10px; }
-	.recommend-list > li { flex:1 1 calc(50% - 20px); margin:10px; }
-	.recommend-list > li:after { zoom:0.7; top:35px; right:20px; }
-	.recommend-list > li > a { padding:20px; }
-	.recommend-list .subject { font-size:20px; }
-	.recommend-list .desc { font-size:16px; }
-
-	.detail-list { margin:40px 0 30px; }
-	.detail-list > li > a { padding:15px 10px; }
-	.detail-list > li > a > * { padding:0 5px; }
-	.detail-list .num { width:17%; }
-	.detail-list .time { width:17%; }
 }
 /* only mo */
 @media (min-width:501px) {
@@ -497,12 +421,8 @@
 	.intro-desc { width:26vw; height:26vw; font-size:3.8vw; padding:5vw 0 0 5vw; right:40px; top:75px; }
 	.intro-vod { margin-top:20px; padding-top:68vw; width:67vw; }
 	.intro-vod-txt { font-size:3.5vw; }
-	.intro-box .subject img { width:200px; }
-	.intro-box.box1 .img-bg { width:70%; }
-	.intro-box.box2 { margin-top:-10%; }
-	.intro-box.box2 .subject img { width:160px }
-	.intro-box.box1 .img-bg { zoom:0.58; }
-	.intro-box.box2:after { right:5px; }
+	.intro-box .subject img { width:140px; }
+	.intro-box.box1 { width:67vw;}
 
 	.info-list > div { border-top-width:1px; }
 
@@ -515,23 +435,13 @@
 	.paging-link,
 	.btn-jump { display:none; }
 	
-	.btn-area.col2 { padding:0 25px; }
 	.btn-base.type2 {width:100%; padding:0 20px; height:60px; line-height:60px; font-size:18px;}
-	.btn-area.col2 { font-size:0; }
-	.btn-base.primary,
-	.btn-base.secondary {width:calc(50% - 5px); padding:0 20px; height:60px; line-height:60px; font-size:18px; }
 	
 	.btn-more-view2 { display:block; width:100%; font-size:16px; text-align:center; display:block; border-radius:15px; padding:15px 0; border:1px solid #d9d9d9}
 	.btn-more-view2:after { display:inline-block; vertical-align:middle; width:10px; height:10px; border-bottom:1px solid #252525; border-right:1px solid #252525; transform:rotate(45deg); margin:-9px 0 0 20px; content:""; }
 	/* table */
 	.tbl-base th,
-	.tbl-base td { padding:10px 15px}
-
-	.form-area.type-cert .img-certification { width:100%; }
-	.form-area.type-cert .img-certification img { width:100%; height:auto; }
-	.form-area.type-cert .form-item { width:100%; }
-	.form-area.type-cert .inp-base { width:100%; min-width:0; padding:0 10px; box-sizing:border-box }
-	.form-txt { font-size:12px; }
+	.tbl-base td { font-size:11px; padding:2px; vertical-align:top;}
 	
 	.class-list li { display:block; margin:10px 0; flex:0 0 100%; }
 	
@@ -572,4 +482,7 @@
 	
 	.class-tit2:before { display:none; }
 	.class-tit2 { margin-top:25px; margin-bottom:5px; }
+	
+	.teacher-img img {width: auto;height: 256px;}
+	
 }
