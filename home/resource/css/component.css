@@ -197,12 +197,12 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .visual-area.main:after { display:none; }
 .visual-area.main .tit-area { z-index:1; position:relative; top:360px; left:0; width:100%; margin:0; }
 .visual-area .visual-inner { z-index:2; position:relative; height:100%; padding:110px 0 0; margin:0 auto; }
-.slider-visual { position:absolute; top:100px; bottom:0; left:0; width:100%; }
+.slider-visual { position:absolute; top:110px; bottom:0; left:0; width:100%; }
 .slider-visual .slider-inner,
 .slider-visual .slick-list,
 .slider-visual .slick-track,
 .slider-visual .slick-slide { height:100%; }
-.slider-visual .slide { position:relative; background-size:cover; background-position:center center; }
+.slider-visual .slide { position:relative; background-size:cover; background-position:center bottom; }
 .slider-pagination .slick-dots { display:inline-block !important; }
 .btn-rolling { position:relative; width:30px; height:30px; margin-right:10px; margin-left:-80px; }
 .btn-rolling:after,
