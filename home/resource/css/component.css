@@ -436,7 +436,7 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .review-list .score { background:url('../img/review_score.png') 0 0/contain no-repeat; width:39.6%; padding-top:6.8%; }
 .review-list .name { display:block; margin:15px 0 10px; font-family:'GmarketSans'; font-weight:700; font-size:21px; }
 .review-list p { font-size:16px; font-family:'NotoSans'; font-weight:300; line-height:1.6em; height:8em; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; line-clamp:5; -webkit-line-clamp:5; -webkit-box-orient: vertical; }
-.cont-area.register .btn-area { margin:3.6% 0 0; }
+.cont-area.register .btn-area { position:relative; margin:3.6% 0 0; }
 .btn-more { position:absolute; display:block; width:50px; height:50px; border-radius:50%; background:#725eb4; transition:all ease-in-out .5s; bottom:7%; right:10%; }
 .btn-more:before,
 .btn-more:after { position:absolute; top:50%; left:50%; width:40%; height:2px; background:#fff; display:block; transform:translate(-50%, -50%); content:""; transition:all ease-in-out .5s;}
@@ -457,8 +457,7 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .cont-area.register.n2 { background:#E7E6ED; overflow:hidden; }
 .cont-area.register.n2 .register-tit { margin:0% 0 3%; }
 .register-class { position:relative; padding-bottom:8%; }
-.register-class:after { margin-top:50px; width:100%; left:0; height:1px; display:block; background:#c3c1d0; content:""; }
-.register-class:last-child:after { display:none; }
+.register-class .btn-area:after { position:absolute; bottom:50%; width:100%; left:0; height:1px; display:block; background:#c3c1d0; content:""; }
 .register-class .btn-more-view { z-indeX:1; position:relative; background:#E7E6ED; transform:scale(0.8); box-shadow:none; border:1px solid #c3c1d0; }
 .register-class .btn-more-view:hover { background:#725eb4; color:#fff; }
 .btn-link { position:relative; display:inline-block; vertical-align:middle; width:48px; height:48px; border-radius:50%; border:1px solid #c3c1d0; margin-top:-4px; }

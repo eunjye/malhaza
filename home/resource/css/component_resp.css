@@ -442,6 +442,7 @@
 	.class-recommend .tit { font-size:24px; }
 	.class-recommend .tit:before { zoom:0.5; }
 	.class-recommend { font-size:16px; }
+	.class-recommend .underline span:before { bottom:5px; }
 
 	.class-list3 .tit { font-size:24px; margin-bottom:30px; }
 	.class-list3 .tit:before { zoom:0.7; }
