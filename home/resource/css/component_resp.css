@@ -202,6 +202,23 @@
 
 	.class-list3 .tit { font-size:30px; }
 	.recommend-list .subject { font-size:24px; }
+
+
+
+	/* landing
+	=================== */
+	.landing .cont-grid { padding-top:50px; padding-bottom:50px; }
+	.landing-bg:not(.banner) .cont-grid { padding:50px 25px; }
+	.landing-benefit { padding:0; }
+	.landing-benefit .benefits > div:after { zoom:0.7; }
+	.landing-benefit .benefits dt { font-size:16px; }
+	.landing-benefit .benefits dd { font-size:14px; }
+
+	.landing-go { padding-bottom:0; font-size:25px; }
+	.landing-go .btn-area { margin-top:20px; }
+	.landing-go .btn-base { font-size:20px; }
+
+	.landing-visual { margin-top:70px; }
 }
 
 @media (max-width:765px) {
@@ -460,6 +477,46 @@
 	.detail-list > li > a > * { padding:0 5px; }
 	.detail-list .num { width:17%; }
 	.detail-list .time { width:17%; }
+
+
+	/* landing
+	================== */
+	.landing-visual .landing-intro { font-size:30px; }
+	.landing-banner { font-size:20px; padding-top:30px; padding-bottom:30px; }
+	.landing-banner .tag. { height:30px; line-height:32px; }
+
+	.landing-skill .tit { padding-left:25px; padding-right:25px; font-size:18px; }
+	.landing-skill .desc { padding-left:25px; padding-right:25px; font-size:18px; }
+	.landing-skill .desc .highlight { padding-bottom:2px; } 
+	.skill-graph { padding:150px 20px 170px; }
+	.skill-graph .teachers .info { transform:scale(0.8);}
+	.skill-graph .teachers { width:100%; height:0; padding-top:100%; background-size:contain; }
+	.skill-graph .teachers > li .link { font-size:16px; left:0 !important; width:100%; text-align:center !important; }
+	.skill-graph .teachers > li.n4 .link a:after, .skill-graph .teachers > li.n5 .link a:after { position:static; margin:0; }
+	.skill-graph .teachers > li .link a:after { margin:0 0 0 5px !important; }
+	.skill-graph .teachers > li.n1 .link { bottom:100%; }
+	.skill-graph .teachers > li .link { top:90%; }
+
+	.skill-graph .teachers:before { zoom:0.7; }
+	.skill-graph .teachers > li.n1 { margin-top:-20px; }
+	.skill-graph .teachers > li.n2 { margin-top:-140px; margin-left:-140px; }
+	.skill-graph .teachers > li.n3 { margin-top:-160px; margin-left:50px; }
+	.skill-graph .teachers > li.n4 { margin-top:-160px; margin-left:-190px; }
+	.skill-graph .teachers > li.n5 { margin-top:-140px; margin-left:15px; }
+
+	.teacher-list { margin:30px 0 70px; }
+	.teacher-list .img { z-index:-1; width:300px; left:0; }
+	.teacher-list .img img { width:100%; height:auto; }
+	.teacher-list > div { padding-left:270px; }
+
+	.teacher-list dt { font-size:20px; }
+	.teacher-list dd strong { font-size:16px; }
+
+	.landing-benefit .tit { font-size:25px; }
+	.landing-benefit .benefits > div { padding:0 20px; }
+	.landing-benefit .benefits > div:before { zoom:0.7; }
+	.landing-benefit .benefits > div:after { zoom:0.5; }
+	.landing-benefit .benefits dd { padding:0; }
 }
 /* only mo */
 @media (min-width:501px) {
@@ -573,4 +630,38 @@
 	
 	.class-tit2:before { display:none; }
 	.class-tit2 { margin-top:25px; margin-bottom:5px; }
+
+	.landing-benefit .benefits > div { float:none; width:100%; padding:20px 0; }
+	.landing-benefit .benefits > div:after { left:50%; margin-left:-32px; top:12px; }
+
+	.landing-go { font-size:20px; }
+	.landing-go .btn-area { padding:0 25px; }
+	.landing-go .btn-base { width:100%; padding:0; }
+
+	.teacher-list { margin:20px 0 20px; }
+	.teacher-list > div { padding:25px 25px 0; overflow:hidden; }
+	.teacher-list .img { position:static; width:200px; float:right; }
+
+	.landing-visual:before { padding-top:300px; background-position:bottom right -164px; }
+	.landing-visual:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; content: ""; background: rgba(0,0,0,0.4); }
+	.landing-visual .landing-head { z-index:1;}
+	.landing-visual .landing-intro { font-size:26px; }
+	.landing-visual .landing-desc { font-size:20px; }
+
+	.landing-banner { padding-left:100px; font-size:16px; word-break:keep-all;}
+	.landing-banner:before { bottom:auto; top:-20px; zoom:0.6; }
+	.landing-banner .tag { height:28px; line-height:30px; font-size:14px; padding:0 8px; }
+
+	.landing-benefit .tit { margin-bottom:15px; }
+
+	.landing-visual .landing-head { padding:0 25px; }
+	.skill-graph { padding:100px 20px 120px; }
+	.skill-graph .teachers > li .link { top:75%; }
+	.skill-graph .teachers > li.n1 .link { bottom:85%; }
+	.skill-graph .teachers .info { transform:scale(0.6); }
+	.skill-graph .teachers > li.n1 { margin-top:-60px; }
+	.skill-graph .teachers > li.n2 { margin-left:-110px; }
+	.skill-graph .teachers > li.n3 { margin-top:-140px; margin-left:0px; }
+	.skill-graph .teachers > li.n4 { margin-top:-140px; margin-left:-150px; }
+	.skill-graph .teachers > li.n5 { margin-left:-25px ;}
 }
