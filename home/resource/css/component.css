@@ -945,6 +945,7 @@ input:checked + .lb_check { background:#79dee2; border-color:transparent; }
 .teacher-list > div { position:relative; border-bottom:1px solid #ced2eb; min-height:290px; padding:55px 20px 30px 410px; word-break:keep-all; }
 .teacher-list .img { position:absolute; left:20px; bottom:0; }
 .teacher-list dt { margin-bottom:20px; font-size:32px; font-weight:700; color:#4554b1; }
+.teacher-list dt a:after { display:inline-block; width:24px; height:24px; background:url('../img/skill_link.png') 0 0/auto auto no-repeat; content:""; margin:-3px 0 0 8px; vertical-align:middle; transition:transform ease-in .3s; }
 .teacher-list dd { font-size:16px; line-height:1.6; }
 .teacher-list dd p { line-height:1.6; }
 .teacher-list dd strong { display:block; margin-bottom:5px; font-size:20px; font-weight:700; }
