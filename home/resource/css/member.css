@@ -36,7 +36,9 @@
 #content .page-tab li.on a {color: #000;}
 #content .page-tab li.on a {border-color: #28faaf; font-weight: 500;}
 
-#content .page-head {position: relative; margin-bottom: 65px;}
+
+.boardFoot { padding-top:0; }
+#content .page-head {position: relative; margin-bottom: 45px;}
 #content .page-head .page-title {margin-bottom: 0; text-align: left;}
 
 @media screen and (max-width: 959px) {
