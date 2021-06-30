@@ -224,6 +224,7 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 ====================== */
 .cont-grid { position:relative; max-width:1300px; padding:100px 2.5% 0; margin:0 auto; }
 .cont-grid.type2 { padding-left:0; padding-right:0; padding-bottom:100px; }
+.detail-area { margin-top:30px; }
 .detail-area .cont-grid { padding:80px 25px; }
 
 .cont-area.intro { font-family:'GmarketSans'; background:linear-gradient(90deg, #f3bf6c 0%, #ffe8b9 100%);  }
@@ -524,9 +525,14 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .teacher-name { font-family:'GMarketSans'; font-weight:800; color:#fff; font-size:94px; text-shadow:0 10px 0 #9ab7ee; letter-spacing:-0.07em;}
 .teacher-img { position:absolute; right:0; bottom:0; width:30%; }
 .teacher-img img {width: auto;height: 456px;}
-.class-vod { display:inline-block; margin-right:6%; width:30%; height:18vw; max-height:215px; vertical-align:top;}
+.class-vod { position:relative; display:inline-block; margin-right:6%; width:30%; height:18vw; max-height:215px; vertical-align:top;}
 .class-vod .video-js { width:100%; height:100%; background:transparent; }
 .class-vod .vjs-poster { background-color:transparent; }
+.class-vod .btn-pdf { position:absolute; top:100%; left:33px; margin-top:15px; }
+
+.btn-pdf { color:#233359; font-size:14px; }
+.btn-pdf span { border-bottom:1px solid #233359; }
+.btn-pdf:before { display:inline-block; width:20px; height:25px; margin:-5px 5px 0 0; vertical-align:middle; background:url('../img/ico_pdf.png') 0 0/20px auto no-repeat; content:""; }
 /* .class-vod .vjs-poster:after { position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.2); display:block; clear:both; content:""; } */
 .bul-check { margin-top:30px; }
 .bul-check > li { line-height:1.6em; margin-bottom:7px; background:url('../img/ico_check.png') 0 4px/auto auto no-repeat; padding-left:35px; color:#fff; font-style:italic; font-family:'scdream'; font-weight:400; font-size:20px; }
